@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Séminaire Data Analyst</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div id="thankYouMessage">
+        ✅ Merci pour votre réservation !  
+        <span>Votre ebook est en cours de téléchargement.</span>
+      </div>
+<header class="hero">
+
+  <div class="gift-link" onclick="openGift()">🎁 Cadeau</div>
+
+  <div class="top-bar">
+    <div class="date">
+      📅 02 FEVRIER 2026
+      <span>⏰ 4h de temps chaque weekend</span>
+    </div>
+
+    <img src="images/logo.jpeg" class="logo">
+
+    <div></div>
+  </div>
+
+  <div class="hero-grid">
+    <div class="hero-text">
+      <h1>FORMATION DATA ANALYST</h1>
+      <h2>Transforme les données en décisions</h2>
+      <p>Formation intensive pour comprendre la data, analyser les informations et développer des compétences recgerchées sur le marché.</p>
+      <p class="location">📍 Yaoundé – Nkolmesseng (face Institut Golden)</p>
+    </div>
+
+    <div class="hero-images">
+      <img src="images/data_a.jpg">
+    </div>
+  </div>
+
+</header>
+
+<section>
+    <h2 class="section-title">Cibles</h2>
+    <div class="cards">
+      <div class="card"><i class="fas fa-user-graduate"></i> Étudiants en Data Analyst/Intelligence Artificielle/Génie Logiciel</div>
+      <div class="card"><i class="fas fa-award"></i> Jeunes diplômés</div>
+      <div class="card"><i class="fas fa-user-tie"></i> Toute personne sérieuse voulant apprendre la data analyse</div>
+    </div>
+</section>
+
+<section>
+<h2 class="section-title">Objectifs de la formation</h2>
+<div class="cards">
+  <div class="card"><i class="fas fa-chart-line"></i> Maîtriser les outils et techniques essentiels pour collecter, nettoyer, analyser et visualiser les données</div>
+  <div class="card"><i class="fas fa-building-columns"></i> Dévelloper des compétences en programmation et intelligence artificielle pour manipuler et analyser des ensembles de données complexes</div>
+  <div class="card"><i class="fas fa-coins"></i> Acquérir les connaissances nécessaires pour concevoir et mettre en oeuvre des solutions d'analyse de données dans des contextes professionnels</div>
+</div>
+</section>
+
+
+<section>
+<h2 class="section-title">Modules de formation</h2>
+<div class="modules">
+  <div class="module">Initiation à la Business Intelligence avec Power Query et Power Pivot</div>
+  <div class="module">Modélisation avec le langage DAX</div>
+  <div class="module">Analyse et visualisation des données avec Power BI</div>
+  <div class="module">Gestion des bases de données avec SQL</div>
+</div>
+</section>
+
+<section>
+<h2 class="section-title">Débouchés</h2>
+<div class="badges">
+  <span class="badge">Business Analyst</span>
+  <span class="badge">Freelance</span>
+  <span class="badge">Consultant Data</span>
+  <span class="badge">Analyste Marketing</span>
+</div>
+</section>
+
+<section>
+    <h2 class="section-title">Détails de formation</h2>
+  
+    <div class="details-formation">
+      <div class="detail-box">
+        <i class="fas fa-pen-to-square"></i>
+        <h4>Inscription</h4>
+        <p>Ouverte – Places limitées</p>
+      </div>
+  
+      <div class="detail-box">
+        <i class="fas fa-money-bill-wave"></i>
+        <h4>Frais de formation</h4>
+        <p>À communiquer lors de la réservation</p>
+      </div>
+    </div>
+  
+    <div class="details-note">
+      Réservé aux personnes très occupées et n’ayant que peu de temps pour se former les samedis.
+      <br>
+      <strong>6 week-ends pour devenir un bon Analyste des données 😊</strong>
+    </div>
+  </section>
+  
+
+<div class="final-cta">
+  <h2>Tu veux participer ? Alors réserve ta place maintenant</h2>
+  <a id="reservation"
+  class="whatsapp"
+  href="javascript:void(0)"
+  onclick="handleReservation()">
+  <i class="fab fa-whatsapp"></i> Réserver via WhatsApp
+</a>
+
+</div>
+
+<section class="testimonials">
+  <div class="testimonial">
+    <img src="images/personne1.jpg">
+    <p>“Un stage très formateur avec un accompagnement professionnel de qualité.”</p>
+    <h4>Marina N.</h4>
+  </div>
+
+  <div class="testimonial">
+    <img src="images/personne2.jpg">
+    <p>“J'ai acquis des compétences pratiques utiles dans l'analyse des données dès la fin du stage .”</p>
+    <h4>Flavien G.</h4>
+  </div>
+</section>
+
+<div class="modal" id="giftModal">
+    <div class="modal-content">
+      <h3>🎁 Cadeau exclusif</h3>
+  
+      <p>
+        Repartez avec un <strong>Ebook exclusif</strong> comportant
+        <strong>5 vérités que personne ne te dit sur la Data Analyse</strong>
+        <strong>7 hacks inattendus pour booster tes analyses</strong>et
+        <strong>10 étapes pour bien commencer en Data Analyse</strong>.
+        <br><br>
+        Pour plus d’informations,
+        <a href="#reservation"
+           onclick="closeGift()"
+           style="color:#f5c86a;font-weight:700;text-decoration:underline">
+           cliquez ici
+        </a>
+      </p>
+  
+      <div class="close" onclick="closeGift()">Close</div>
+    </div>
+  </div>
+  
+    <script src="script.js"></script>
+
+</body>
+</html>
