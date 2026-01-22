@@ -21,7 +21,7 @@ setTimeout(() => {
 // 3️⃣ Télécharger le PDF après 4 secondes
 setTimeout(() => {
   const link = document.createElement("a");
-  link.href = "document/ebook_data_analyst.docx";
+  link.href = "ebook_data_analyst.docx";
   link.download = "ebook_data_analyst.docx";
   document.body.appendChild(link);
   link.click();
@@ -32,4 +32,5 @@ setTimeout(() => {
 setTimeout(() => {
   msg.classList.remove("show");
 }, 7000);
+
 }
